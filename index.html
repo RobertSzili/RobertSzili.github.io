@@ -3,7 +3,7 @@
 </head>
 <body>
 <p>
-This is the status page for a currently<br>
+This is the public status page for a currently<br>
 nameless software solution's development<br>
  process.<br>
 It is currently under development but I'll try to<br>
@@ -38,10 +38,29 @@ as boundary value problems</li>
 equations</li>
 </list>
 </p>
+
+
+
+<canvas id="myChart" style="width:100%;max-width:700px">Chart</canvas>
+
 Developed by Robert Szili in 2021-2022.<br>
 Source code and development documents are<br>
 under a closed licence, but in case of interest<br>
 you can contact me at:<br>
 robert.szili2@gmail.com .
+
+
+<script type="text/javascript"
+src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"
+/>
+
+<script type="text/javascript">
+var myChart = new Chart(
+document.getElementById("myChart"), {
+  type: "line",
+  data: {},
+  options: {}
+});
+</script>
 </body>
 </html>
